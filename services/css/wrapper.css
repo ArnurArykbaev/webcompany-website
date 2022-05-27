@@ -1,0 +1,33 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.el {
+  position: absolute;
+  opacity: 0.2;
+  width: 8px;
+  height: 20vh;
+  margin-top: -12vh;
+  transform-origin: 50% 100%;
+  background: rgb(255, 255, 255);
+  top: 170px;
+  right: 0;
+  margin-right: 20%;
+  transform: translate(-50%, -50%);
+  z-index: -8;
+}
+
+@media (max-width:1800px) {
+  .right_block {
+    display: none;
+  }
+  .wrapper {
+    display: none;
+  }
+  .el {
+    display: none;
+  }
+};

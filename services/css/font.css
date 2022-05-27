@@ -1,0 +1,39 @@
+@font-face { 
+    font-family: "Mont-Regular";
+    src: url("../css/fonts/Mont-Regular.eot");
+    src: url("../css/fonts/Mont-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../css/fonts/Mont-Regular.woff") format("woff"),
+    url("../css/fonts/Mont-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face { 
+    font-family: "Mont-Regular";
+    src: url("../css/fonts/Mont-Regular.eot");
+    src: url("../css/fonts/Mont-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../css/fonts/Mont-Regular.woff") format("woff"),
+    url("../css/fonts/Mont-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face { 
+    font-family: "Mont-Light";
+    src: url("../css/fonts/Mont-Light.eot");
+    src: url("../css/fonts/Mont-Light.eot?#iefix")format("embedded-opentype"),
+    url("../css/fonts/Mont-Light.woff") format("woff"),
+    url("../css/fonts/Mont-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face { 
+    font-family: "Mont-Bold";
+    src: url("../css/fonts/Mont-Bold.eot");
+    src: url("../css/fonts/Mont-Bold.eot?#iefix")format("embedded-opentype"),
+    url("../css/fonts/Mont-Bold.woff") format("woff"),
+    url("../css/fonts/Mont-Bold.ttf") format("truetype");
+    font-style: bold;
+    font-weight: 800;
+}

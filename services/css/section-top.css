@@ -1,0 +1,56 @@
+.right_blot {
+    position: absolute;
+    pointer-events:none;
+    right: 0;
+    top: 0;
+    z-index: -10;
+}
+
+.right_block {
+    flex: 1.5;
+    position: relative;
+}
+
+.head_cloud {
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 0px 540px;
+    margin-bottom: 80px;
+}
+
+.cloud-img {
+    margin-left: -3px;
+    width: 350px;
+}
+
+.head-block_btn {
+    display: flex;
+    font-size: calc(0.87em + 0.3em);
+    width: 16em;
+    height: 3em;
+    text-align: left;
+    align-items: center;
+    top: 520px;
+    cursor: pointer;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+
+.head-block_btn p {
+    margin: auto;
+}
+
+
+@media (max-width: 1205px) {
+    .right_block {
+        display: none;
+    }
+}
+
+@media (max-width:430px) {
+    .service_btn {
+        font-size: 12px;
+    }
+}
+

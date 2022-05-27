@@ -1,0 +1,229 @@
+.section_portfolio {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.head_info {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.block_info {
+    font-family: 'Mont-Light', sans-serif;
+    width: 100%;
+    max-width: 1280px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2em;
+    line-height: 175%;
+    color: #979797;
+}
+
+.block_info-bold {
+    font-family: 'Mont', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 175%;
+    color: #393A3C;
+}
+
+.block_info-shadow{
+    font-family: 'Mont', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 175%;
+    color: #939393;
+}
+
+
+
+.portfolio {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.portfolio_item {    
+    position: relative;
+    width: calc(100% / 3);
+    height: auto;
+    max-height: 525px;
+    margin: 0px;
+}
+
+.project_img {
+    width: 100%; 
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    object-position: center;
+}
+.project_tag {
+    position: absolute;
+    width: 26.3em;
+    left: 60px;
+    top: 26px;
+    font-family: 'Mont', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #747474;
+}
+
+.project_info {
+    width: 100%;
+    max-width: 320px;
+    position: absolute;
+    left: 60px;
+    bottom: 35px;
+    font-family: 'Mont', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.87em;
+    line-height: 140%;
+    color: #393A3C;
+    margin: 0;
+}
+.name_of_the_project {
+    font-family: 'Mont', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 175%;
+    color: #393A3C;
+    padding: 0px;
+    margin: 0;
+}
+.design_item-5 p,
+.name_of_the_project-5,
+.project_tag-5,
+.project_tag-7,
+.name_of_the_project-7,
+.design_item-7 p {
+    color: #ffff;
+}
+@media (max-width:1800px) {
+    .project_info,
+    .project_tag {
+        font-size: 12px;        
+    }
+    .project_info {
+        width: 300px;
+        bottom: 50px;
+        left: 40px;
+    }
+}
+@media (max-width:1700px) {
+    .project_info,
+    .project_tag {
+        left: 6.9vh;
+        bottom: 4vh;        
+    }
+}
+@media (max-width:1600px) {
+    .project_info,
+    .project_tag {
+        bottom: 3.5vh;        
+    }
+    .section {
+        padding: 70px 0;
+    }
+    .head_info {
+        font-size: 14px;
+    }
+}
+@media (max-width:1500px) {
+    .project_info {
+        max-width: 260px;
+        bottom: 3vh;
+        left: 7.3vh;
+    }
+    .section {
+        padding: 50px 0;
+    }
+    .head_info {
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 1320px) {
+    .project_info {
+        bottom: 5vh;
+    }
+    .portfolio_item {
+        width: calc(100% / 2);
+    }
+}
+@media (max-width: 1030px) {
+    .head_info {
+        font-size: 10px;
+    }    
+    .project_info {
+        max-width: 260px;
+        bottom: 4.5vh;
+        left: 6.3vh;
+    }
+}
+
+@media (max-width: 880px) {
+    .head_info {
+        font-size: 8px;
+    }
+    .project_tag {
+        top: 15px;
+        max-width: 300px;
+    }
+    .project_info {
+        width: 250px;
+        bottom: 15px;
+    }
+}
+@media (max-width: 800px) {
+    .portfolio_item {
+        width: calc(100% / 1);
+    }    
+    .project_info {
+        bottom: 5.5vh;
+        left: 8vh;
+    }
+}
+@media (max-width:650px) {
+    .head_info {
+        padding: 0 30px;
+    }
+    .block_info {
+        font-size: 12px;
+    }
+}
+@media (max-width:430px) {
+    .head_info {
+        display: none;
+    }
+    .project_info,
+    .project_tag {    
+        max-width: 29em;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 175%;
+        left: 30px;      
+    }  
+    .project_info {
+        bottom: 1vh;
+    }
+    .project_info {
+        width: 230px;
+    }
+}
+@media (max-width:390px) {
+    .project_info {
+        width: 200px;
+        bottom: 2px;
+    }
+}
+

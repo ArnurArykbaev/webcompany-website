@@ -1,0 +1,52 @@
+/* btn-menu */
+.btn-menu {
+    width: 50px;
+    background: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px;
+    border: 0;
+    padding-top: 15px;
+}
+/* btn-menu end */
+/* form */
+.form-check-input:checked {
+    background-color: transparent;
+    border-color: #393A3C;
+    color: #393A3C;
+}
+.form-check-input:checked[type=checkbox] {
+    background-image: url(../img/form/check.svg);
+}
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+
+.form-check-input:checked {
+    background-color: transparent;
+    border-color: #393A3C;
+}
+.btn-outline-secondary {
+    color: #212529;
+}
+.btn_send {
+    border-radius: 999px;
+    padding: 20px 70px;
+    margin: auto 0;
+    border: 1px solid #212529;
+}
+/* form */
+
+/* btn_to-top*/
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+     font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+  /* btn_to-top*/

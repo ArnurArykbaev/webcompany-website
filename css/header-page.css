@@ -1,0 +1,278 @@
+.header-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    background-blend-mode: soft-light, normal;
+    padding: 9px 0;
+    overflow: hidden;
+    box-sizing: border-box;    
+}
+.header-page_container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.header-page_start {
+    display: flex;
+    align-items: center;
+}
+.a {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+.header-page_start:hover {
+    color: #5c04ff;
+}
+.header-page_end {
+    display: flex;
+    align-items: center;
+}
+
+.header-page_nav {
+    position: relative;
+    display: flex;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.header-page_ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-page_link {
+    color: #1f1f1f;
+    text-decoration: none;
+    display: block;
+    padding: 15px 35px;
+    font-weight: 900;
+    position: relative;
+    transition: padding .4s;
+}
+
+
+.header-page_link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(156, 155, 155);
+    width: 100%;
+    height: calc(100% + 80px);
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all .7s;   
+}
+
+
+.сompany_logo {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.сompany_name {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.125em;
+    margin: auto;
+}
+
+.company_name-right {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    margin: auto;
+    padding: 15px 20px 15px 15px ;
+}
+
+.header-page_text {
+    position: relative;
+    transition: color .2s;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.header-page_link:hover .header-page_text {
+    color: #5c04ff;
+    transition: 0.2s;
+}
+
+.contacts {
+    display: flex;
+    text-align: center;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.post:hover {
+    color: #5c04ff;
+}
+
+.contacts_phone {
+    justify-content: center;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.header-page_phone:hover {
+    color: #5c04ff;
+}
+
+.phone_number {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.12em;
+}
+
+.header-page_phone {
+    text-decoration: underline dashed;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #92959b
+}
+
+
+
+.header-page_hamburger {
+    display: none;
+    margin:auto;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+.header-page.is-active .header-page_link{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media (max-width:1400px) {
+    .post {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1150px) {
+    .phone_number {
+        font-size: 20px;
+    }
+    .header-page_phone {
+        font-size: 10px;
+    }
+    .contacts_phone {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-page_link {
+        font-size: 15px;
+        padding: 12px 30px;
+    }
+    .header-page_phone {
+        font-size: 14px;
+        padding: 7px 16px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .header-page_container {
+        display: inline-flex;
+        flex-wrap: nowrap;        
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-page_nav {
+        display: none;
+    }
+    .header-page_hamburger {
+        display: block;
+        
+    }
+
+    .header-page {
+        padding: 5px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .сompany_name {
+        font-size: 20px;
+    }
+    .company_name-right {
+        display: none;
+    }
+    .phone_number {
+        font-size: 18px;
+    }
+    .header-page_phone {
+        font-size: 12px;
+        padding: 7px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-page_phone {
+        display: none;
+    }
+    .contacts {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 440px) {
+    .contacts {
+        display: none;
+    }
+    .header-page_container {
+        width: 400px;
+        justify-content: space-between;
+    }
+    .сompany_name {
+        font-size: 28px;
+    }
+    .company_name-right {
+        display: block;
+        padding: 10px 10px 10px 10px;
+    }
+    .header-page_hamburger {
+        margin: 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 340px) {
+    .phone_number {
+        font-size: 16px;
+    }
+}
+
